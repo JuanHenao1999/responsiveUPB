@@ -17,7 +17,7 @@ header {
 
 .logo{
     text-transform: uppercase;
-    color: #837421;
+    color: #84cd6a;
 }
 
 .menu a{
@@ -35,7 +35,7 @@ header {
 }
 
 .menu a:hover, .mostrar-menu:hover, .esconder-menu:hover{
-    color: #837421;
+    color: #84cd6a;
 }
 
 .mostrar-menu {
@@ -84,7 +84,7 @@ header {
 
 .boton-empezar{
     color: white;
-    border: 1px solid #837421;
+    border: 1px solid #84cd6a;
     border-radius: 10px;
     padding: 20px 40px;
     align-self: baseline;
@@ -92,7 +92,7 @@ header {
 }
 
 .boton-empezar:hover {
-    background-color: #837421;
+    background-color: #84cd6a;
 }
 
 #personas {
@@ -124,16 +124,16 @@ header {
 
 .boton-saber-mas{
     display: inline-block;
-    color: #837421;
+    color: #84cd6a;
     padding: 10px 30px;
-    border: 3px solid #837421;
+    border: 3px solid #84cd6a;
     margin-top: 15px;
     border-radius: 30px;
     transition: all 0.4s;
 }
 
 .boton-saber-mas:hover{
-    background-color: #837421;
+    background-color: #84cd6a;
     color: white;
 }
 
@@ -172,6 +172,80 @@ header {
     padding-bottom: 50px;
 }
 
+#contacto{
+    background: #84cd6a;
+    padding: 50px 0px;
+    color: white;
+}
+
+#contacto h4{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#contacto form{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.datos-form{
+    display: flex;
+}
+
+.datos-form div{
+    padding: 10px;
+    flex: 1;
+}
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form textarea{
+    background: #84cd6a;
+    border-radius: 10px;
+    border: 2px solid #a8da88;
+    padding: 10px 5px;
+    outline: 0;
+    color: white;
+    width: 100%;
+}
+
+form input:focus, form textarea:focus{
+    border-color: #00a96d;
+    box-shadow: 0 0 0 1px#00a96d;
+}
+
+form input::placeholder, form textarea::placeholder{
+    color: white;
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.boton-formulario .boton-saber-mas  {
+    display: block;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.boton-formulario .boton-saber-mas:hover{
+    background-color: #a8da88;
+}
+
+footer{
+    background-color: #1f2732;
+    color: #84cd6a;
+    text-align: center;
+    padding: 10px;
+}
+
 @media(max-width:768px){
     .mostrar-menu, .esconder-menu {
         display: block;
@@ -205,6 +279,18 @@ header {
     }
 
     #personas {
+        flex-direction: column;
+    }
+
+    .contenido-iconos{
+        flex-direction: column;
+    }
+
+    .contenido-iconos div {
+        border: none;
+    }
+
+    .datos-form{
         flex-direction: column;
     }
 }
