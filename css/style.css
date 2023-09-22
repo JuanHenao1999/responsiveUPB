@@ -95,6 +95,83 @@ header {
     background-color: #837421;
 }
 
+#personas {
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#personas img {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+}
+
+#personas div{
+    padding: 30px 30px;
+}
+
+#personas div h4 {
+    color: #1f2732;
+    font-size: 20px;
+    margin: 14px 0px;
+}
+
+#personas div p {
+    color: #1f2732;
+    font-size: 18px;
+}
+
+.boton-saber-mas{
+    display: inline-block;
+    color: #837421;
+    padding: 10px 30px;
+    border: 3px solid #837421;
+    margin-top: 15px;
+    border-radius: 30px;
+    transition: all 0.4s;
+}
+
+.boton-saber-mas:hover{
+    background-color: #837421;
+    color: white;
+}
+
+#iconos {
+    padding: 0px 50px;
+    background-color: rgba(77, 77, 77, 0.6);
+}
+
+.contenido-iconos{
+    padding: 50px 50px 0 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contenido-iconos div {
+    flex: 1;
+    margin: 20px 0px;
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.contenido-iconos div h6{
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px 0px;
+}
+
+.contenido-iconos div p{
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 15px;
+}
+
+.boton-iconos{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
 @media(max-width:768px){
     .mostrar-menu, .esconder-menu {
         display: block;
@@ -125,5 +202,9 @@ header {
 
     #check:checked ~ .menu{
         right: 0;
+    }
+
+    #personas {
+        flex-direction: column;
     }
 }
